@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Цвет фона для контрастности */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black; /* Черный контур вокруг кнопок */
+    padding: 20px;
+    background-color: white; /* Фон для контурa */
+    border-radius: 10px;
+    margin-top: 20px;
+    width: fit-content; /* Ширина по содержимому */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    
+}
+
+.circle-button {
+    width: 60px;  /* Ширина кнопки */
+    height: 60px; /* Высота кнопки */
+    border-radius: 50%; /* Круглая форма */
+    border: 2px solid black; /* Черный контур кнопок */
+    transition: transform 0.3s; /* Плавный переход при наведении */
+}
+
+/* Цвета кнопок */
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: lightblue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+/* Эффект при наведении */
+.circle-button:hover {
+    transform: scale(1.2); 
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
