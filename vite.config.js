@@ -6,14 +6,14 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       sass: {
-        additionalData: '',
+        api: 'modern-compiler'
       } , 
     },
   },
   build: {
     outDir: 'dist',
     rollupOptions: {
-      input: './preprocessor/main.sass',
+      input: ['./preprocessor/main.sass', './preprocessor/mixins.sass'],
       output: {
         assetFileNames: 'style.[ext]',
       },
