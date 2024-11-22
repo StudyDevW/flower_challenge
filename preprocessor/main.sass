@@ -1,0 +1,74 @@
+@use "mixins.sass" as *
+
+body 
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+    height: 100vh
+    margin: 0
+    background-color: white
+
+.container
+    display: flex
+    flex-direction: row
+    align-items: center
+    border: 2px solid black
+    padding: 20px
+    background-color: white
+    border-radius: 10px
+    margin-top: 20px
+    width: fit-content
+    
+
+.circle-button 
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    border: 2px solid black
+    transition: transform 0.3s
+
+.object-other
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    border: 2px solid black
+    transition: transform 0.3s
+
+.circle-button
+    &:hover 
+        transform: scale(1.2)
+    
+.red 
+    background-color: red
+    &:hover
+           ~
+             .svg-icon-st
+                @include set-color-svg(red)
+                
+
+.green 
+    background-color: green
+    &:hover
+           ~
+             .svg-icon-st
+                @include set-color-svg(green)
+
+.blue 
+    background-color: lightblue
+    &:hover
+           ~
+             .svg-icon-st
+                @include set-color-svg(lightblue)
+
+.yellow 
+    background-color: yellow
+    &:hover
+           ~
+             .svg-icon-st
+                @include set-color-svg(yellow)
+
+.title 
+    font-size: 30px
+    font-weight: bold
+    text-align: center
